@@ -1,0 +1,108 @@
+@media(min-width: 900px) {
+    header {
+
+        z-index: 1;
+
+        .mobile-menu {
+            display: none;
+        }
+
+        .desktop-menu {
+            display: block;
+
+            .content {
+                display: flex;
+                justify-content: flex-end;
+                padding-right: 2rem;
+
+                a {
+                    padding: .5rem 1rem;
+                    background: white;
+                    color: black;
+                    border: 3px solid white;
+                    margin: 1rem 2rem;
+                    border-radius: .5rem;
+                    letter-spacing: 1px;
+                    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+
+                    &:hover {
+                        background: rgba(255, 255, 255, 0.4);
+                    }
+                }
+            }
+        }
+    }
+
+    .home-section {
+        height: 90vh;
+        border-radius: 0 0 0 10rem;
+        background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .9)), url(../images/header-poster.png);
+        background-size: cover;
+
+        .title {
+            h1 {
+                font-size: 4rem;
+                padding: 0 .5rem;
+            }
+        }
+    }
+
+    .collection-options {
+        height: 60vh;
+        border-radius: 0 0 2rem 2rem;
+        align-items: flex-start;
+
+        .preview-poster {
+            height: 100%;
+            width: 50%;
+            border-radius: 0 2rem 2rem 0;
+            position: relative;
+
+            &::after {
+                position: absolute;
+                content: "Enjoy All movies in blueray and 4k quaity!";
+                right: -40rem;
+                font-size: 1.5rem;
+                color: white;
+                letter-spacing: 2px;
+                text-transform: capitalize;
+            }
+        }
+
+        .menu-container {
+            .menu-content {
+                width: 25rem;
+                left: 120%;
+                top: -7rem;
+
+                .content {
+                    width: 100%;
+                }
+
+            }
+        }
+    }
+
+    .movie-collection {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 5rem;
+        padding: 0 15rem;
+
+        .card {
+            height: 20rem;
+        }
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-around;
+
+        .social {
+            font-size: 1.4rem;
+
+            i {
+                margin: 0 1rem;
+            }
+        }
+    }
+}

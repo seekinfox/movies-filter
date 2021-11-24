@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--    font awsome -->
+    <script src="https://kit.fontawesome.com/89c3976cfc.js" crossorigin="anonymous"></script>
+    <!--    css file-->
+    <link rel="stylesheet" href="./css/style.css">
+    <!--    main javascript-->
+    <script src="main.js" defer></script>
+    <title>Marvel Movie Center</title>
+</head>
+
+<body>
+    <header>
+        <!--    basic website menu-->
+        <div class="mobile-menu">
+            <div class="menu-icon">
+                <i id="icon" class="fas fa-compass"></i>
+            </div>
+            <nav id="nav">
+                <div class="content">
+                    <a href="#">Home</a>
+                    <a href="#">Newsletter</a>
+                    <a href="#">Contact</a>
+                </div>
+            </nav>
+        </div>
+        <div class="desktop-menu">
+            <div class="content">
+                <a href="#">Home</a>
+                <a href="#">Newsletter</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </header>
+    <section class="home-section">
+        <div class="title">
+            <h1>Marvel</h1>
+            <p>movies collection</p>
+        </div>
+    </section>
+    <section class="collection-options">
+        <div class="preview-poster">
+            <h2>Total movies <span id="number"></span></h2>
+            <!--        here goes thumnail of a menu-option after it is clicked -->
+            <nav class="menu-container">
+                <div class="icon">
+                    <i class="fas fa-filter"></i>
+                </div>
+                <div class="menu-content">
+                    <div class="content">
+                        <a class="btn" href="#" data-filter="All">ALL</a>
+                        <a id="one" class="btn" href="#" data-filter="ironman">iron man</a>
+                        <a class="btn" href="#" data-filter="spiderman">spiderman</a>
+                        <a class="btn" href="#" data-filter="hulk">hulk</a>
+                        <a class="btn" href="#" data-filter="thor">thor</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+    <!--movie items-->
+    <section class="movie-collection">
+
+        <div class="card" data-item="spiderman">
+            <div class="img">
+                <img src="./images/spiderman%20no%20way%20home.jpg" alt="spiderman-poster">
+                <div class="rating">
+                    <h3>spiderman <br /> no way home</h3>
+                    <p>2021</p>
+                    <div class="quality">
+                        <p>blueray</p>
+                        <p>4k</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card" data-item="ironman">
+            <div class="img">
+                <img src="./images/ironman2.jpg" alt="ironman-poster">
+                <div class="rating">
+                    <h3>iron man 2</h3>
+                    <p>2010</p>
+                    <div class="quality">
+                        <p>blueray</p>
+                        <p>4k</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card" data-item="hulk">
+            <div class="img">
+                <img src="./images/hulk2.jpg" alt="hulk-poster">
+                <div class="rating">
+                    <h3>the incredible hulk</h3>
+                    <p>2008</p>
+                    <div class="quality">
+                        <p>blueray</p>
+                        <p>4k</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card" data-item="spiderman">
+            <div class="img">
+                <img src="./images/spiderman%20far%20from%20home.jpg" alt="spiderman">
+                <div class="rating">
+                    <h3>spiderman far from home</h3>
+                    <p>2019</p>
+                    <div class="quality">
+                        <p>blueray</p>
+                        <p>4k</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card" data-item="thor">
+            <div class="img">
+                <img src="./images/thor2.jpg" alt="thor-poster">
+                <div class="rating">
+                    <h3>thor <br />the dark world</h3>
+                    <p>2013</p>
+                    <div class="quality">
+                        <p>blueray</p>
+                        <p>4k</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card" data-item="spiderman">
+            <div class="img">
+                <img src="./images/The_Amazing_Spider-Man1.jpeg" alt="tas1">
+                <div class="rating">
+                    <h3>the amazing spiderman</h3>
+                    <p>2012</p>
+                    <div class="quality">
+                        <p>blueray</p>
+                        <p>4k</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card" data-item="spiderman">
+            <div class="img">
+                <img src="./images/The_Amazing_Spider-Man2.jpg" alt="as2">
+                <div class="rating">
+                    <h3>the amazing spiderman 2</h3>
+                    <p>2014</p>
+                    <div class="quality">
+                        <p>blueray</p>
+                        <p>4k</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card" data-item="ironman">
+            <div class="img">
+                <img src="./images/ironman1.jpg" alt="ironman">
+                <div class="rating">
+                    <h3>iron man</h3>
+                    <p>2008</p>
+                    <div class="quality">
+                        <p>blueray</p>
+                        <p>4k</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card" data-item="hulk">
+            <div class="img">
+                <img src="./images/hulk1.jpg" alt="hulk">
+                <div class="rating">
+                    <h3>hulk</h3>
+                    <p>2003</p>
+                    <div class="quality">
+                        <p>blueray</p>
+                        <p>4k</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card" data-item="ironman">
+            <div class="img">
+                <img src="./images/ironman3.jpg" alt="">
+                <div class="rating">
+                    <h3>iron man 3</h3>
+                    <p>2013</p>
+                    <div class="quality">
+                        <p>blueray</p>
+                        <p>4k</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card" data-item="spiderman">
+            <div class="img">
+                <img src="./images/spiderman3.jpg" alt="">
+                <div class="rating">
+                    <h3>spiderman 3</h3>
+                    <p>2007</p>
+                    <div class="quality">
+                        <p>blueray</p>
+                        <p>4k</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card" data-item="spiderman">
+            <div class="img">
+                <img src="./images/spiderman1.jpg" alt="spiderman">
+                <div class="rating">
+                    <h3>spiderman</h3>
+                    <p>2002</p>
+                    <div class="quality">
+                        <p>blueray</p>
+                        <p>4k</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card" data-item="thor">
+            <div class="img">
+                <img src="./images/thor3.jpg" alt="thor">
+                <div class="rating">
+                    <h3>thor ragnarok</h3>
+                    <p>2017</p>
+                    <div class="quality">
+                        <p>blueray</p>
+                        <p>4k</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card" data-item="thor">
+            <div class="img">
+                <img src="./images/thor1.jpg" alt="thor">
+                <div class="rating">
+                    <h3>thor</h3>
+                    <p>2011</p>
+                    <div class="quality">
+                        <p>blueray</p>
+                        <p>4k</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card" data-item="spiderman">
+            <div class="img">
+                <img src="./images/spiderman2.jpg" alt="spiderman-poster">
+                <div class="rating">
+                    <h3>spiderman 2</h3>
+                    <p>2004</p>
+                    <div class="quality">
+                        <p>blueray</p>
+                        <p>4k</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card" data-item="spiderman">
+            <div class="img">
+                <img src="./images/spider-homecoming.jpg" alt="">
+                <div class="rating">
+                    <h3>spiderman homecomming </h3>
+                    <p>2017</p>
+                    <div class="quality">
+                        <p>blueray</p>
+                        <p>4k</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-logo">
+            <p>marvel <span>studios</span></p>
+        </div>
+        <div class="links">
+            <a href="#">contact</a>
+            <a href="#">new projects</a>
+            <a href="#">resources</a>
+            <a href="#">about marvel</a>
+        </div>
+        <div class="social">
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-facebook-square"></i>
+        </div>
+        <div class="credits">
+            <sub>copyrights 2021 @Seekinfox pvt. ltd.</sub>
+        </div>
+    </footer>
+</body>
+
+</html>
